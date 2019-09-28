@@ -1,5 +1,6 @@
 ---
 title: My sample title
+layout: post
 ---
 
 ## Welcome to GitHub Pages
