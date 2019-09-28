@@ -1,6 +1,5 @@
 ---
 title: My sample title
-subtitle: My second title
 layout: post
 ---
 
