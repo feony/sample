@@ -2,3 +2,13 @@ title: "Hello world"
 subtitle: "My beautiful world"
 description: "My favorite beautiful world"
 theme: jekyll-theme-leap-day
+
+author:
+  name: Dinya Feony Senjo
+
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Google: "http://google.com/"
+    - Yandex: "http://yandex.ru/"
+  Author's home: "http://senjo.org/"
