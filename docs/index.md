@@ -1,7 +1,6 @@
 ---
 title: "My sample title"
 author: "John Smith"
-layout: "foobar"
 ---
 
 ## Welcome to GitHub Pages
