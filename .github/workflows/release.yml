@@ -1,9 +1,10 @@
+# This script can't update an exists release. It only for create a new releases.
 name: RELEASE - Creating new release and upload assets
 
 on:
   push:
-    branches: [ master ]
-
+    tags:  # Sequence of patterns matched against refs/tags
+    - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 jobs:
   publish:
     name: Upload Release Asset

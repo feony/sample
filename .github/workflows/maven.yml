@@ -1,7 +1,5 @@
-# This workflow will build a Java project with Maven
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
-name: MAVEN - Java CI with maven
+# Auto compile, test and deploy Java project with Maven CI
+name: MAVEN - Compile, test and deploy maven project
 
 on:
   push:
@@ -23,12 +21,9 @@ jobs:
 #     run: mvn -B package --file pom.xml
     - name: Prepare the authentication configuration
       env:
-          GTOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DTOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        pwd
-        ls -lia
         cp .github/config/settings.xml ~/.m2/
-        sed -i "s/{UNIT}/sample/g; s/{USER}/feony/g; s/{PASS}/$GTOKEN/g; s/{DEPL}/$DTOKEN/g" ~/.m2/settings.xml
+        sed -i "s/{UNIT}/sample/g; s/{USER}/feony/g; s/{PASS}/$TOKEN/g" ~/.m2/settings.xml
     - name: Deploy with Maven
       run: mvn deploy
