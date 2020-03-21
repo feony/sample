@@ -21,6 +21,7 @@ jobs:
       - shell: bash
         run: |
           expr 3 + 7 > math-homework.txt
+          ls -li ~
       - name: Upload math result for job 1
         uses: actions/upload-artifact@v1
         with:
