@@ -29,6 +29,6 @@ jobs:
         pwd
         ls -lia
         cp .github/config/settings.xml ~/.m2/
-        sed -i 's/{UNIT}/sample/g; s/{USER}/feony/g; s/{PASS}/$GTOKEN/g; s/{DEPL}/$DTOKEN/g' ~/.m2/settings.xml
+        sed -i "s/{UNIT}/sample/g; s/{USER}/feony/g; s/{PASS}/$GTOKEN/g; s/{DEPL}/$DTOKEN/g" ~/.m2/settings.xml
     - name: Deploy with Maven
       run: mvn deploy
