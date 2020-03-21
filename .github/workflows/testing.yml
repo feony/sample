@@ -21,11 +21,11 @@ jobs:
       - shell: bash
         run: |
           expr 3 + 7 > math-homework.txt
-          ls -lia .
+          pwd
+          ls -lia ~/work/sample/sample
       - shell: bash
         run: |
-          expr 3 + 7 > math-homework.txt
-          ls -lia ~/work/sample
+          ls -lia ~/work/sample/sample/*
       - name: Upload math result for job 1
         uses: actions/upload-artifact@v1
         with:
