@@ -1,4 +1,4 @@
-name: Testing workflows and publish
+name: TEST - Testing workflows and publish
 
 on: [push]
 

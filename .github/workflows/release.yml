@@ -1,4 +1,4 @@
-name: Scripts for create new release and upload asset in it
+name: RELEASE - Creating new release and upload assets
 
 on:
   push:
