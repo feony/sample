@@ -23,7 +23,6 @@ jobs:
 #     run: mvn -B package --file pom.xml
     - name: Prepare the authentication configuration
       run: |
-        mkdir ~/.m2
         cp ~/.github/config/settings.xml ~/.m2/
         sed -i 's/{UNIT}/sample/g; s/{USER}/feony/g; s/{PASS}/${{ secrets.DEPLOY_TOKEN }}/g' ~/.m2/settings.xml
     - name: Deploy with Maven
