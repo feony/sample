@@ -48,7 +48,7 @@
     <build>
         <plugins>
 
-    <!-- Ïëàãèí äîïîëíÿåò è êîíôèãóğèğóåò êîíå÷íûé JAR-ôàéë -->
+    <!-- ÃÃ«Ã Ã£Ã¨Ã­ Ã¤Ã®Ã¯Ã®Ã«Ã­Ã¿Ã¥Ã² Ã¨ ÃªÃ®Ã­Ã´Ã¨Ã£Ã³Ã°Ã¨Ã°Ã³Ã¥Ã² ÃªÃ®Ã­Ã¥Ã·Ã­Ã»Ã© JAR-Ã´Ã Ã©Ã« -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -58,11 +58,11 @@
                     <execution>
                         <phase>package</phase>
                         <goals>
-    <!-- Öåëü ñêà÷èâàåò è äîáàâëÿåò â JAR èñïîëüçóåùèåñÿ â êîäå ñòîğîííèå áèáëèîòåêè -->
+    <!-- Ã–Ã¥Ã«Ã¼ Ã±ÃªÃ Ã·Ã¨Ã¢Ã Ã¥Ã² Ã¨ Ã¤Ã®Ã¡Ã Ã¢Ã«Ã¿Ã¥Ã² Ã¢ JAR Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã¥Ã¹Ã¨Ã¥Ã±Ã¿ Ã¢ ÃªÃ®Ã¤Ã¥ Ã±Ã²Ã®Ã°Ã®Ã­Ã­Ã¨Ã¥ Ã¡Ã¨Ã¡Ã«Ã¨Ã®Ã²Ã¥ÃªÃ¨ -->
                             <goal>shade</goal>
                         </goals>
                         
-    <!-- Ïğîïèñûâàåò â ìàíèôåñò ãëàâíûé ïóñêîâûé êëàññ äëÿ JAR ôàéëà -->
+    <!-- ÃÃ°Ã®Ã¯Ã¨Ã±Ã»Ã¢Ã Ã¥Ã² Ã¢ Ã¬Ã Ã­Ã¨Ã´Ã¥Ã±Ã² Ã£Ã«Ã Ã¢Ã­Ã»Ã© Ã¯Ã³Ã±ÃªÃ®Ã¢Ã»Ã© ÃªÃ«Ã Ã±Ã± Ã¤Ã«Ã¿ JAR Ã´Ã Ã©Ã«Ã  -->
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
@@ -80,7 +80,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
         <!-- Dependency for hashing -->
@@ -91,7 +91,7 @@
             <version>1.11</version>
         </dependency>
 
-        <!--Ïğî÷èé õëàì dependency>
+        <!--ÃÃ°Ã®Ã·Ã¨Ã© ÃµÃ«Ã Ã¬ dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.14</version>
